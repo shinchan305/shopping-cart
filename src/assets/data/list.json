@@ -1,0 +1,44 @@
+[
+    {
+        "Name": "Laptop",
+        "Price": 70000,
+        "Description": "HP Laptop",
+        "Category": "Electronics",
+        "Image": "laptop.png"
+    },
+    {
+        "Name": "Mouse",
+        "Price": 500,
+        "Description": "Robust",
+        "Category": "Electronics",
+        "Image": "mouse.png"
+    },
+    {
+        "Name": "Keyboard",
+        "Price": 1000,
+        "Description": "Nice keyboard",
+        "Category": "Electronics",
+        "Image": "keyboard.png"
+    },
+    {
+        "Name": "Bed",
+        "Price": 10000,
+        "Description": "Wooden bed",
+        "Category": "Furniture",
+        "Image": "bed.png"
+    },
+    {
+        "Name": "Chair",
+        "Price": 2000,
+        "Description": "Office Chair",
+        "Category": "Furniture",
+        "Image": "chair.png"
+    },
+    {
+        "Name": "Table",
+        "Price": 1500,
+        "Description": "Wooden Table",
+        "Category": "Furniture",
+        "Image": "table.png"
+    }
+]

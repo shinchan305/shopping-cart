@@ -1,0 +1,16 @@
+<ul class="list-group">
+    <li class="list-group-item" *ngFor="let item of filteredList; let i = index" style="display: flex;">
+        <div>
+            {{item.Name}}
+        </div>
+        <div class="input-group" style="flex: 0.11;margin-left: auto;">
+            <div class="input-group-prepend">
+                <button class="btn btn-primary" [disabled]="!item.Count" type="button" (click)="decreaseItemCount(i)">-</button>
+            </div>
+            <input type="text" class="form-control text-center" max="10" (input)="updateCart(i, item.Count)" [(ngModel)]="item.Count" placeholder="0">
+            <div class="input-group-append">
+                <button class="btn btn-primary" type="button" (click)="increaseItemCount(i)">+</button>
+            </div>
+        </div>
+    </li>
+</ul>

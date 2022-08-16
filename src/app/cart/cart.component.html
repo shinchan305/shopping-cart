@@ -1,0 +1,30 @@
+<ul class="list-group">
+    <li class="list-group-item" *ngFor="let item of items; let i = index" style="display: flex;">
+        <div>
+            {{item.Name}} <span class="badge badge-warning">{{item.Count}}</span>
+        </div>        
+        <div class="ml-auto">
+            <strong>{{item.Count * item.Price | currency: 'INR'}}</strong>
+        </div>
+    </li>
+    <li class="list-group-item" style="display: flex;" *ngIf="getTotal()">
+        <div class="ml-auto">
+            <strong><em>Total: {{getTotal() | currency: 'INR'}}</em></strong>
+        </div>
+    </li>
+</ul>
+
+
+<div *ngIf="!items.length" style="    width: 400px;
+height: 400px;
+display: flex;
+align-items: center;
+margin: auto;
+flex-direction: column;">
+    <div style="flex: 1;">
+        <fa-icon [icon]="faShoppingCart" style="font-size: 100px;opacity:0.3;align-self: center;"></fa-icon>
+    </div>    
+    <div style="flex: 1;">
+        <em><h1 class="text-center" style="font-size: 50px;opacity:0.3">Cart is Empty</h1></em>
+    </div>    
+</div>
